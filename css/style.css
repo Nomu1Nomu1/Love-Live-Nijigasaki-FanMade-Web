@@ -1,0 +1,192 @@
+:root{
+    --base-color: #f8b656;
+    --base-light-color: rgba(248, 182, 86, 0.5);
+    --staff-color: #1BA6FF;
+    --story-color: #ff6d6d;
+    --member-color: #67d0ff;
+    --simulcast-color: #E4007F;
+    --text-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    appearance: 0;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, div {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+body{
+    min-height: 100%;
+    min-width: 1400px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+}
+/* header */
+.global_nav{
+    font-size: 10px;
+    padding: 0.5em 0px 0.5em 0px;
+    height: 2em;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.portal{
+    margin: 0 0 0 1em;
+    line-height: 1;
+    height: 1em;
+}
+.portal a{
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+.worldwide{
+    margin: 0 1em 0 0;
+    line-height: 1;
+    height: 1em;
+}
+
+.worldwide a{
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+/* Contents */
+
+/* nav */
+
+.contents {
+    position: relative;
+    padding: 0px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contents > nav {
+    width: 30%;
+    position: relative;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    z-index: 499;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+/* Logo Nav */
+nav > .logo{
+    padding-right: 15px;
+}
+
+.logo {
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Navigation */
+
+.navigation ul {
+    margin-bottom: 30px;
+}
+
+.navigation ul li {
+    margin-bottom: 10px;
+}
+
+.navigation ul li a {
+    display: block;
+    font-size: 80%;
+    text-align: center;
+    border: thin solid;
+    border-radius: 3em;
+    line-height: 1;
+    position: relative;
+    transition: all .6s;
+    text-decoration: none;
+    color: #FFF;
+    padding: 1em 7.9em;
+    letter-spacing: -.05em;
+}
+
+.navigation li a.cast {
+    background-color: var(--staff-color);
+}
+
+.navigation li a.cast:hover {
+    background-color: var(--text-color);
+    color: var(--staff-color);
+}
+
+.navigation li a.story {
+    background-color: var(--story-color);
+}
+
+.navigation li a.story:hover {
+    background-color: var(--text-color);
+    color: var(--story-color);
+}
+
+.navigation li a.member {
+    background-color: var(--member-color);
+}
+
+.navigation li a.member:hover {
+    background-color: var(--text-color);
+    color: var(--member-color);
+}
+
+/* banner */
+.nav .bnr {
+    margin-bottom: 30px;
+}
+
+.nav .bnr ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a.bnrbox {
+    display: block;
+    background-color: var(--simulcast-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 1em;
+    line-height: 1.2;
+    text-align: center;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 4px double rgba(255, 255, 255, 1.00);
+    font-weight: bold;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    word-break: keep-all;
+}
