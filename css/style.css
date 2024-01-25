@@ -190,3 +190,55 @@ a.bnrbox {
     margin-right: auto;
     word-break: keep-all;
 }
+
+/* Main */
+.main{
+    
+    padding-top: 30px;
+}
+
+.contents > main {
+    width: 70%;
+    position: relative;
+}
+
+article {
+    display: block;
+}
+
+main nav > div, main article div {
+    width: 100%;
+    padding: 0 1em;
+    margin-bottom: 50px;
+}
+
+main article > div.kv {
+    padding: 0;
+}
+
+#kv {
+    background-image: url(../assets/clear.jpg);
+}
+
+#kv {
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+/* Social */
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.social li img{
+    width: 60px;
+}
