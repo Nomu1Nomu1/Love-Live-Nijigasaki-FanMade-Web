@@ -236,6 +236,21 @@ main article > div.kv {
     background-image: url(../assets/clear.jpg);
 }
 
+#kv-japanese{
+    background-image: url(../assets/clear1.jpg);
+}
+
+#kv-japanese{
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
 #kv {
     max-width: 990px;
     margin-left: auto;
