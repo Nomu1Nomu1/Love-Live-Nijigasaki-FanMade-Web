@@ -1,0 +1,355 @@
+:root {
+    --base-color: #f8b656;
+    --base-light-color: rgba(248, 182, 86, 0.5);
+    --staff-color: #1BA6FF;
+    --staff-light-color: rgba(27, 166, 255, .50);
+    --story-color: #ff6d6d;
+    --member-color: #67d0ff;
+    --simulcast-color: #E4007F;
+    --text-color: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    appearance: 0;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+pre,
+blockquote,
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+body {
+    min-height: 100%;
+    min-width: 1400px;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif, "YakuHanJP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+    color: #4e4e4e;
+    line-height: 1.5;
+    
+}
+
+/* body */
+body::after {
+    width: 100%;
+    height: 600px;
+    content: '';
+    position: fixed;
+    top: 0;
+    background-image: url(../assets/bg-l.png);
+    background-color: var(--staff-color);
+    background-position: center bottom;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* header */
+.global_nav {
+    font-size: 10px;
+    padding: 0.5em 0px 0.5em 0px;
+    height: 2em;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.portal {
+    margin: 0 0 0 1em;
+    line-height: 1;
+    height: 1em;
+}
+
+.portal a {
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+.worldwide {
+    margin: 0 1em 0 0;
+    line-height: 1;
+    height: 1em;
+}
+
+.worldwide a {
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+/* Contents */
+
+/* nav */
+
+.contents {
+    position: relative;
+    padding: 0px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contents>nav {
+    width: 30%;
+    position: relative;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    z-index: 499;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+/* Logo */
+.contents>#logo {
+    width: 30%;
+    position: relative;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+#logo {
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Contents Title */
+
+.contents>#contentstitle {
+    width: 70%;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+#contentstitle h1 {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 15px);
+}
+
+#contentstitle h1 {
+    background-color: var(--staff-color);
+}
+
+#contentstitle h1 {
+    color: var(--text-color);
+    border-radius: 2em;
+    padding: .5em 1em;
+    font-size: 100%;
+    letter-spacing: -.02em;
+    line-height: 1;
+    font-weight: 300;
+    width: 100%;
+    z-index: 500;
+}
+
+/* Navigation */
+
+.navigation ul {
+    margin-bottom: 30px;
+}
+
+.navigation ul li {
+    margin-bottom: 10px;
+}
+
+.navigation ul li a {
+    display: block;
+    font-size: 80%;
+    text-align: center;
+    border: thin solid;
+    border-radius: 3em;
+    line-height: 1;
+    position: relative;
+    transition: all .6s;
+    text-decoration: none;
+    color: #FFF;
+    padding: 1em 7.9em;
+    letter-spacing: -.05em;
+}
+
+.navigation li a.cast {
+    background-color: var(--staff-color);
+}
+
+.navigation li a.cast:hover {
+    background-color: var(--text-color);
+    color: var(--staff-color);
+}
+
+.navigation li a.story {
+    background-color: var(--story-color);
+}
+
+.navigation li a.story:hover {
+    background-color: var(--text-color);
+    color: var(--story-color);
+}
+
+.navigation li a.member {
+    background-color: var(--member-color);
+}
+
+.navigation li a.member:hover {
+    background-color: var(--text-color);
+    color: var(--member-color);
+}
+
+/* banner */
+.nav .bnr {
+    margin-bottom: 30px;
+}
+
+.nav .bnr ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a.bnrbox {
+    display: block;
+    background-color: var(--simulcast-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 1em;
+    line-height: 1.2;
+    text-align: center;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 4px double rgba(255, 255, 255, 1.00);
+    font-weight: bold;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    word-break: keep-all;
+}
+
+/* Main */
+.main {
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+.contents>main {
+    width: 70%;
+    position: relative;
+}
+
+article {
+    display: block;
+}
+
+main nav>div,
+main article div {
+    width: 100%;
+    padding: 0 1em;
+    margin-bottom: 50px;
+}
+
+main article>div.kv {
+    padding: 0;
+}
+
+/* Cast */
+
+.main h2 {
+    color: var(--staff-color);
+    border-left: 1em solid var(--staff-color);
+}
+
+.main h2 {
+    border-radius: .2em;
+    background-color: var(--text-color);
+    padding: 0 1em;
+    font-size: 100%;
+    font-weight: 700;
+    -webkit-box-shadow: 1px 2px 5px rgba(168, 168, 168, 1.00);
+    box-shadow: 1px 2px 5px rgba(168, 168, 168, 1.00);
+    margin-bottom: calc(1.4em / 1.6);
+}
+
+.main .cast {
+    color: var(--staff-color);
+    line-height: 1.2;
+    font-weight: 100;
+    margin-bottom: 3em;
+    text-align: center;
+    text-shadow: 0px 0px 10px var(--staff-light-color);
+    -ms-text-shadow: 0px 0px 10px var(--staff-light-color);
+}
+
+
+.cast dt {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+    clear: both;
+}
+
+.cast dd {
+    padding-left: calc(50% + 10px);
+    margin-bottom: 10px;
+}
+
+
+
+/* Footer */
+footer {
+    clear: both;
+    width: 100%;
+    position: relative;
+    margin-top: 10rem;
+    padding-bottom: 30px;
+}
+
+footer .endbar {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    background-color: var(--base-color);
+}
+
+footer .copyright {
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+footer .copyright p {
+    text-align: center;
+    width: 100%;
+    font-size: 70%;
+    letter-spacing: -.003em;
+}

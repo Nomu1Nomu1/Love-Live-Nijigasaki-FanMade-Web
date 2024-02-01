@@ -1,0 +1,11 @@
+dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    text-align: left;
+    list-style-type: none;
+    zoom: normal;
+}
