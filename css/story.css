@@ -4,6 +4,8 @@
     --staff-color: #1BA6FF;
     --staff-light-color: rgba(27, 166, 255, .50);
     --story-color: #ff6d6d;
+    --tv-color: #eb6f8b;
+    --tv-light-color: rgba(235,111,139,.3);
     --member-color: #67d0ff;
     --simulcast-color: #E4007F;
     --text-color: #fff;
@@ -65,7 +67,7 @@ body::after {
     position: fixed;
     top: 0;
     background-image: url(../assets/bg-l.png);
-    background-color: var(--staff-color);
+    background-color: var(--story-color);
     background-position: center bottom;
     background-size: cover;
     z-index: -1;
@@ -161,7 +163,7 @@ body::after {
 }
 
 #contentstitle h1 {
-    background-color: var(--staff-color);
+    background-color: var(--tv-color);
 }
 
 #contentstitle h1 {
@@ -205,16 +207,6 @@ body::after {
     background-color: var(--staff-color);
 }
 
-.navigation li a.cast::after {
-    content: '〉';
-    display: block;
-    width: 1em;
-    height: 1em;
-    position: absolute;
-    right: .5em;
-    top: 1em;
-}
-
 .navigation li a.cast:hover {
     background-color: var(--text-color);
     color: var(--staff-color);
@@ -222,6 +214,16 @@ body::after {
 
 .navigation li a.story {
     background-color: var(--story-color);
+}
+
+.navigation li a.story::after {
+    content: '〉';
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: .5em;
+    top: 1em;
 }
 
 .navigation li a.story:hover {
@@ -292,46 +294,23 @@ main article > div.kv {
     padding: 0;
 }
 
-/* Cast */
-
-.main h2 {
-    color: var(--staff-color);
-    border-left: 1em solid var(--staff-color);
+/* Story */
+.main .outline{
+    width: 500px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.main h2 {
-    border-radius: .2em;
-    background-color: var(--text-color);
-    padding: 0 1em;
-    font-size: 100%;
-    font-weight: 700;
-    -webkit-box-shadow: 1px 2px 5px rgba(168, 168, 168, 1.00);
-    box-shadow: 1px 2px 5px rgba(168, 168, 168, 1.00);
-    margin-bottom: calc(1.4em / 1.6);
-}
-
-.main .cast {
-    color: var(--staff-color);
-    line-height: 1.2;
-    font-weight: 100;
-    margin-bottom: 3em;
+.outline p{
+    color: var(--tv-color);
+    line-height: 2;
+    letter-spacing: -.005em;
+    font-weight: 500;
+    margin-bottom: 2em;
     text-align: center;
-    text-shadow: 0px 0px 10px var(--staff-light-color);
-    -ms-text-shadow: 0px 0px 10px var(--staff-light-color);
-}
-
-
-.cast dt {
-    width: 50%;
-    float: left;
-    text-align: right;
-    padding-right: 10px;
-    clear: both;
-}
-
-.cast dd {
-    padding-left: calc(50% + 10px);
-    margin-bottom: 10px;
+    text-shadow: 0px 0px 10px var(--tv-light-color);
+    -ms-text-shadow: 0px 0px 10px var(--tv-light-color);
+    word-break: keep-all;
 }
 
 /* Social */
