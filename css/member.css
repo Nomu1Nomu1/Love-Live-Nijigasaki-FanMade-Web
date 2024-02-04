@@ -4,9 +4,43 @@
     --staff-color: #1BA6FF;
     --staff-light-color: rgba(27, 166, 255, .50);
     --story-color: #ff6d6d;
+    --tv-color: #eb6f8b;
+    --tv-light-color: rgba(235,111,139,.3);
     --member-color: #67d0ff;
     --simulcast-color: #E4007F;
     --text-color: #fff;
+
+    /* Member color */
+
+    --yu-color: rgba(29,29,29,1);
+    --yu-light-color: rgba(29,29,29,.3);
+    --ayumu-color: rgba(237,125,149,1);
+    --ayumu-light-color: rgba(237,125,149,.3);
+    --kasumi-color: rgba(231,214,0,1);
+    --kasumi-light-color: rgba(231,214,0,.3);
+    --shizuku-color: rgba(1,183,237,1);
+    --shizuku-light-color: rgba(1,183,237,.3);
+    --karin-color: rgba(72,94,198,1);
+    --karin-light-color: rgba(72,94,198,.3);
+    --ai-color: rgba(255,88,0,1);
+    --ai-light-color: rgba(255,88,00,.6);
+    --kanata-color: rgba(166,100,160,1);
+    --kanata-light-color: rgba(166,100,160,.3);
+    --setsuna-color: rgba(216,28,47,1);
+    --setsuna-light-color: rgba(216,28,47,.6);
+    --ema-color: rgba(132,195,110,1);
+    --ema-light-color: rgba(132,195,110,.3);
+    --rina-color: rgba(156,165,185,1);
+    --rina-light-color: rgba(156,165,185,.3);
+    --shioriko-color: rgba(55,180,132,1);
+    --shioriko-light-color: rgba(55,180,132,.3);
+    --mia-color: rgba(214,213,202,1);
+    --mia-light-color: rgba(214,213,202,.3);
+    --mia-color: rgba(169,168,152,1);
+    --mia-light-color: rgba(169,168,152,.3);
+    --lanzhu-color: rgba(248,200,196,1);
+    --lanzhu-light-color: rgba(248,200,196,.3);
+
 }
 
 
@@ -65,7 +99,7 @@ body::after {
     position: fixed;
     top: 0;
     background-image: url(../assets/bg-l.png);
-    background-color: var(--staff-color);
+    background-color: var(--member-color);
     background-position: center bottom;
     background-size: cover;
     z-index: -1;
@@ -161,7 +195,7 @@ body::after {
 }
 
 #contentstitle h1 {
-    background-color: var(--staff-color);
+    background-color: var(--member-color);
 }
 
 #contentstitle h1 {
@@ -205,16 +239,6 @@ body::after {
     background-color: var(--staff-color);
 }
 
-.navigation li a.cast::after {
-    content: '〉';
-    display: block;
-    width: 1em;
-    height: 1em;
-    position: absolute;
-    right: .5em;
-    top: 1em;
-}
-
 .navigation li a.cast:hover {
     background-color: var(--text-color);
     color: var(--staff-color);
@@ -236,6 +260,16 @@ body::after {
 .navigation li a.member:hover {
     background-color: var(--text-color);
     color: var(--member-color);
+}
+
+.navigation li a.member::after {
+    content: '〉';
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: .5em;
+    top: 1em;
 }
 
 /* banner */
@@ -288,51 +322,100 @@ main article > div {
     margin-bottom: 50px;
 }
 
-main article > div.cast {
+main article > div#member {
     padding: 0;
     margin-bottom: 3em;
 }
 
-/* Cast */
+/* Member */
 
-.main h2 {
-    color: var(--staff-color);
-    border-left: 1em solid var(--staff-color);
+.thumb {
+    max-width: 550px;
+    display: flex!important;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
-.main h2 {
-    border-radius: .2em;
-    background-color: var(--text-color);
-    padding: 0 1em;
-    font-size: 100%;
-    font-weight: 700;
-    -webkit-box-shadow: 1px 2px 5px rgba(168, 168, 168, 1.00);
-    box-shadow: 1px 2px 5px rgba(168, 168, 168, 1.00);
-    margin-bottom: calc(1.4em / 1.6);
+.thumb li{
+    max-width: 100;
+    width: calc((100% - 70px) / 5)!important;
+    float: none;
+    margin: 5px;
 }
 
-.main .cast {
-    color: var(--staff-color);
-    line-height: 1.2;
-    font-weight: 100;
-    margin-bottom: 3em;
-    text-align: center;
-    text-shadow: 0px 0px 10px var(--staff-light-color);
-    -ms-text-shadow: 0px 0px 10px var(--staff-light-color);
+.thumb li img{
+    border-radius: 50%;
+    border: 5px solid;
+    transition: all .3s;
+    cursor: pointer;
 }
 
+/* Member Color */
 
-.cast dt {
-    width: 50%;
-    float: left;
-    text-align: right;
-    padding-right: 10px;
-    clear: both;
+.thumb li img.takasaki{
+    border-color: var(--yu-color);
+    background-color: var(--yu-light-color);
 }
 
-.cast dd {
-    padding-left: calc(50% + 10px);
-    margin-bottom: 10px;
+.thumb li img.uehara{
+    border-color: var(--ayumu-color);
+    background-color: var(--ayumu-light-color);
+}
+
+.thumb li img.nakasu{
+    border-color: var(--kasumi-color);
+    background-color: var(--kasumi-light-color);
+}
+
+.thumb li img.osaka{
+    border-color: var(--shizuku-color);
+    background-color: var(--shizuku-light-color);
+}
+
+.thumb li img.asaka{
+    border-color: var(--karin-color);
+    background-color: var(--karin-light-color);
+}
+
+.thumb li img.miyashita{
+    border-color: var(--ai-color);
+    background-color: var(--ai-light-color);
+}
+
+.thumb li img.konoe{
+    border-color: var(--kanata-color);
+    background-color: var(--kanata-light-color);
+}
+
+.thumb li img.yuki{
+    border-color: var(--setsuna-color);
+    background-color: var(--setsuna-light-color);
+}
+
+.thumb li img.verde{
+    border-color: var(--ema-color);
+    background-color: var(--ema-light-color);
+}
+
+.thumb li img.tennoji{
+    border-color: var(--rina-color);
+    background-color: var(--rina-light-color);
+}
+
+.thumb li img.shioriko{
+    border-color: var(--shioriko-color);
+    background-color: var(--shioriko-light-color);
+}
+
+.thumb li img.mia{
+    border-color: var(--mia-color);
+    background-color: var(--mia-light-color);
+}
+
+.thumb li img.lanzhu{
+    border-color: var(--lanzhu-color);
+    background-color: var(--lanzhu-light-color);
 }
 
 /* Social */
