@@ -329,96 +329,67 @@ main article > div#member {
 
 /* Member */
 
-.thumb {
-    max-width: 550px;
-    display: flex!important;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
+/* Slick Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.thumb li{
-    max-width: 100;
-    width: calc((100% - 70px) / 5)!important;
-    float: none;
-    margin: 5px;
+.slider {
+    margin: 0 0 1em;
 }
 
-.thumb li img{
-    border-radius: 50%;
-    border: 5px solid;
-    transition: all .3s;
-    cursor: pointer;
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
-/* Member Color */
-
-.thumb li img.takasaki{
-    border-color: var(--yu-color);
-    background-color: var(--yu-light-color);
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.thumb li img.uehara{
-    border-color: var(--ayumu-color);
-    background-color: var(--ayumu-light-color);
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.thumb li img.nakasu{
-    border-color: var(--kasumi-color);
-    background-color: var(--kasumi-light-color);
+.slick-track:before, .slick-track:after {
+    display: table;
+    content: '';
 }
 
-.thumb li img.osaka{
-    border-color: var(--shizuku-color);
-    background-color: var(--shizuku-light-color);
+.slick-initialized .slick-slide {
+    display: block;
 }
 
-.thumb li img.asaka{
-    border-color: var(--karin-color);
-    background-color: var(--karin-light-color);
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
 }
-
-.thumb li img.miyashita{
-    border-color: var(--ai-color);
-    background-color: var(--ai-light-color);
-}
-
-.thumb li img.konoe{
-    border-color: var(--kanata-color);
-    background-color: var(--kanata-light-color);
-}
-
-.thumb li img.yuki{
-    border-color: var(--setsuna-color);
-    background-color: var(--setsuna-light-color);
-}
-
-.thumb li img.verde{
-    border-color: var(--ema-color);
-    background-color: var(--ema-light-color);
-}
-
-.thumb li img.tennoji{
-    border-color: var(--rina-color);
-    background-color: var(--rina-light-color);
-}
-
-.thumb li img.shioriko{
-    border-color: var(--shioriko-color);
-    background-color: var(--shioriko-light-color);
-}
-
-.thumb li img.mia{
-    border-color: var(--mia-color);
-    background-color: var(--mia-light-color);
-}
-
-.thumb li img.lanzhu{
-    border-color: var(--lanzhu-color);
-    background-color: var(--lanzhu-light-color);
-}
-
-/* Member Info Bottom */
 
 /* Social */
 

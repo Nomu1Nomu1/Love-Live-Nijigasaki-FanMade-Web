@@ -1,0 +1,76 @@
+@charset "utf-8";
+main article > div#member {
+	padding: 0;
+	margin-bottom: 3em;
+}
+
+.cbox {
+	height: 900px;
+	padding-top: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.textbox {
+	padding-top: 150px;
+	padding-left: 16em;
+}
+
+
+#yu .textbox .info {
+	padding-left: 88px;
+}
+#ayumu .textbox .info {
+	padding-left: 20px;
+}
+#kasumi .textbox .info {
+	padding-left: 55px;
+}
+#shizuku .textbox .info {
+	padding-left: 45px;
+}
+#karin .textbox .info {
+	padding-left: 20px;
+}
+#ai .textbox .info {
+	padding-left: 40px;
+}
+#setsuna .textbox .info {
+	padding-left: 80px;
+}
+#ema .textbox .info {
+	padding-left: 20px;
+}
+#mia .textbox .info {
+	padding-left: 26px;
+}
+#lanzhu .textbox .info {
+	padding-left: 45px;
+}
+
+
+.img {
+	position: absolute;
+	background-size: contain;
+	left: 0;
+	width: 100%;
+	background-position-x: 0;
+}
+.bg {
+	top: 15em;
+	height: 550px;
+	width: 150%;
+	margin-left: -1em;
+}
+.mark {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	right: 20px;
+	bottom: 20px;
+}
+
+.jp [data-ruby]::before {
+	font-size: 0.2em;
+}
+[data-ruby].arashi::before {
+}

@@ -1,0 +1,520 @@
+@charset "UTF-8";
+
+:root {
+    /* Member color */
+
+    --yu-color: rgba(29, 29, 29, 1);
+    --yu-light-color: rgba(29, 29, 29, .3);
+    --ayumu-color: rgba(237, 125, 149, 1);
+    --ayumu-light-color: rgba(237, 125, 149, .3);
+    --kasumi-color: rgba(231, 214, 0, 1);
+    --kasumi-light-color: rgba(231, 214, 0, .3);
+    --shizuku-color: rgba(1, 183, 237, 1);
+    --shizuku-light-color: rgba(1, 183, 237, .3);
+    --karin-color: rgba(72, 94, 198, 1);
+    --karin-light-color: rgba(72, 94, 198, .3);
+    --ai-color: rgba(255, 88, 0, 1);
+    --ai-light-color: rgba(255, 88, 00, .6);
+    --kanata-color: rgba(166, 100, 160, 1);
+    --kanata-light-color: rgba(166, 100, 160, .3);
+    --setsuna-color: rgba(216, 28, 47, 1);
+    --setsuna-light-color: rgba(216, 28, 47, .6);
+    --ema-color: rgba(132, 195, 110, 1);
+    --ema-light-color: rgba(132, 195, 110, .3);
+    --rina-color: rgba(156, 165, 185, 1);
+    --rina-light-color: rgba(156, 165, 185, .3);
+    --shioriko-color: rgba(55, 180, 132, 1);
+    --shioriko-light-color: rgba(55, 180, 132, .3);
+    --mia-color: rgba(214, 213, 202, 1);
+    --mia-light-color: rgba(214, 213, 202, .3);
+    --mia-color: rgba(169, 168, 152, 1);
+    --mia-light-color: rgba(169, 168, 152, .3);
+    --lanzhu-color: rgba(248, 200, 196, 1);
+    --lanzhu-light-color: rgba(248, 200, 196, .3);
+}
+
+/* Member Top */
+
+.thumb {
+    max-width: 550px;
+    display: flex !important;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.thumb li {
+    max-width: 100;
+    width: calc((100% - 70px) / 5) !important;
+    float: none;
+    margin: 5px;
+}
+
+.thumb li img {
+    border-radius: 50%;
+    border: 5px solid;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* Member Color */
+
+.thumb li img.yu {
+    border-color: var(--yu-color);
+    background-color: var(--yu-light-color);
+}
+
+.thumb li img.ayumu {
+    border-color: var(--ayumu-color);
+    background-color: var(--ayumu-light-color);
+}
+
+.thumb li img.kasumi {
+    border-color: var(--kasumi-color);
+    background-color: var(--kasumi-light-color);
+}
+
+.thumb li img.shizuku {
+    border-color: var(--shizuku-color);
+    background-color: var(--shizuku-light-color);
+}
+
+.thumb li img.karin {
+    border-color: var(--karin-color);
+    background-color: var(--karin-light-color);
+}
+
+.thumb li img.ai {
+    border-color: var(--ai-color);
+    background-color: var(--ai-light-color);
+}
+
+.thumb li img.kanata {
+    border-color: var(--kanata-color);
+    background-color: var(--kanata-light-color);
+}
+
+.thumb li img.setsuna {
+    border-color: var(--setsuna-color);
+    background-color: var(--setsuna-light-color);
+}
+
+.thumb li img.emma {
+    border-color: var(--ema-color);
+    background-color: var(--ema-light-color);
+}
+
+.thumb li img.rina {
+    border-color: var(--rina-color);
+    background-color: var(--rina-light-color);
+}
+
+.thumb li img.shioriko {
+    border-color: var(--shioriko-color);
+    background-color: var(--shioriko-light-color);
+}
+
+.thumb li img.mia {
+    border-color: var(--mia-color);
+    background-color: var(--mia-light-color);
+}
+
+.thumb li img.lanzhu {
+    border-color: var(--lanzhu-color);
+    background-color: var(--lanzhu-light-color);
+}
+
+.cbox {
+	position: relative;
+	width: 1024px;
+	max-width: 100%;
+	height: 1024px;
+	max-height: 100%;
+	margin: auto;
+}
+.namebox {
+	position: relative;
+	z-index: 300;
+}
+.namebox p {
+	text-align: right;
+}
+.namebox .jp {
+	font-size: 400%;
+	letter-spacing: -.05em;
+	font-weight: 700;
+}
+.namebox .cv {
+	font-size: 150%;
+	margin-top: 0px;
+	font-weight: 600;
+}
+.textbox {
+	position: relative;
+	z-index: 300;
+	border-radius: .5em;
+	padding-right: 15px;
+	letter-spacing: -.005em;
+	word-break: keep-all;
+}
+.textbox dl {
+	font-size: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+.textbox > dl:last-of-type {
+	margin-bottom: 30px;
+}
+.textbox dl::after {
+	clear: both;
+	display: block;
+	width: 100%;
+	content: '';
+}
+.textbox dl dt,
+.textbox dl dd {
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.textbox dl dt {
+	font-size: 80%;
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 10px;
+	margin-left: 20px;
+	border-right: 5px solid;
+}
+.textbox dl dd {
+}
+.textbox .info p {
+	text-align: left;
+	line-height: 1.8;
+	word-break: keep-all;
+}
+
+
+.img {
+	position: absolute;
+	z-index: 299;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+.mark {
+	z-index: 298;
+}
+.bg {
+	position: absolute;
+	z-index: 297;
+	top: 25%;
+	left: 50%;
+	transform: translateX(-50%) rotate(5deg);
+    -webkit-transform: translateX(-50%) rotate(5deg);
+    -ms-transform: translateX(-50%) rotate(5deg);
+	width: 150vw;
+	height: 600px;
+	overflow: visible;
+	opacity: .3;
+}
+
+#yu .img {
+	background-image: url(../member-assets/character/c01.png);
+}
+#yu .textbox {
+}
+#yu .namebox p,
+#yu .self p {
+	text-shadow: 2px 2px 5px var(--yu-light-color);
+}
+#yu .namebox .en {
+	color: var(--yu-color);
+}
+#yu .textbox dl dt {
+	border-color: var(--yu-color);
+}
+#yu .bg {
+	background-color: var(--yu-color);
+}
+#yu .mark {
+	background-image: url(../member-assets/mark/c01mark.png);
+}
+
+
+#ayumu .img {
+	background-image: url(../member-assets/character/c02.png);
+}
+#ayumu .textbox {
+}
+#ayumu .namebox p,
+#ayumu .self p {
+	text-shadow: 2px 2px 5px var(--ayumu-color);
+}
+#ayumu .namebox .en {
+	color: var(--ayumu-color);
+}
+#ayumu .textbox dl dt {
+	border-color: var(--ayumu-color);
+}
+#ayumu .bg {
+	background-color: var(--ayumu-color);
+}
+#ayumu .mark {
+	background-image: url(../member-assets/mark/c02mark.png);
+}
+
+
+#kasumi .img {
+	background-image: url(../member-assets/character/c03.png);
+}
+#kasumi .textbox {
+}
+#kasumi .namebox p,
+#kasumi .self p {
+	text-shadow: 2px 2px 5px var(--kasumi-color);
+}
+#kasumi .namebox .en {
+	color: var(--kasumi-color);
+}
+#kasumi .textbox dl dt {
+	border-color: var(--kasumi-color);
+}
+#kasumi .bg {
+	background-color: var(--kasumi-color);
+}
+#kasumi .mark {
+	background-image: url(../member-assets/mark/c03mark.png);
+}
+
+
+#shizuku .img {
+	background-image: url(../member-assets/character/c04.png);
+}
+#shizuku .textbox {
+}
+#shizuku .namebox p,
+#shizuku .self p {
+	text-shadow: 2px 2px 5px var(--shizuku-color);
+}
+#shizuku .namebox .en {
+	color: var(--shizuku-color);
+}
+#shizuku .textbox dl dt {
+	border-color: var(--shizuku-color);
+}
+#shizuku .bg {
+	background-color: var(--shizuku-color);
+}
+#shizuku .mark {
+	background-image: url(../member-assets/mark/c04mark.png);
+}
+
+
+#karin .img {
+	background-image: url(../member-assets/character/c05.png);
+}
+#karin .textbox {
+}
+#karin .namebox p,
+#karin .self p {
+	text-shadow: 2px 2px 5px var(--karin-color);
+}
+#karin .namebox .en {
+	color: var(--karin-color);
+}
+#karin .textbox dl dt {
+	border-color: var(--karin-color);
+}
+#karin .bg {
+	background-color: var(--karin-color);
+}
+#karin .mark {
+	background-image: url(../member-assets/mark/c05mark.png);
+}
+
+
+#ai .img {
+	background-image: url(../member-assets/character/c06.png);
+}
+#ai .textbox {
+}
+#ai .namebox p,
+#ai .self p {
+	text-shadow: 2px 2px 5px var(--ai-light-color);
+}
+#ai .namebox .en {
+	color: var(--ai-color);
+}
+#ai .textbox dl dt {
+	border-color: var(--ai-color);
+}
+#ai .bg {
+	background-color: var(--ai-color);
+}
+#ai .mark {
+	background-image: url(../member-assets/mark/c06mark.png);
+}
+
+
+#kanata .img {
+	background-image: url(../member-assets/character/c07.png);
+}
+#kanata .textbox {
+}
+#kanata .namebox p,
+#kanata .self p {
+	text-shadow: 2px 2px 5px var(--kanata-color);
+}
+#kanata .namebox .en {
+	color: var(--kanata-color);
+}
+#kanata .textbox dl dt {
+	border-color: var(--kanata-color);
+}
+#kanata .bg {
+	background-color: var(--kanata-color);
+}
+#kanata .mark {
+	background-image: url(../member-assets/mark/c07mark.png);
+}
+
+
+#setsuna .img {
+	background-image: url(../member-assets/character/c08.png);
+}
+#setsuna .textbox {
+}
+#setsuna .namebox p,
+#setsuna .self p {
+	text-shadow: 2px 2px 5px var(--setsuna-light-color);
+}
+#setsuna .namebox .en {
+	color: var(--setsuna-color);
+}
+#setsuna .textbox dl dt {
+	border-color: var(--setsuna-color);
+}
+#setsuna .bg {
+	background-color: var(--setsuna-color);
+}
+#setsuna .mark {
+	background-image: url(../member-assets/mark/c08mark.png);
+}
+
+
+#emma .img {
+	background-image: url(../member-assets/character/c09.png);
+}
+#emma .textbox {
+}
+#emma .namebox p,
+#emma .self p {
+	text-shadow: 2px 2px 5px var(--ema-color);
+}
+#emma .namebox .en {
+	color: var(--ema-color);
+}
+#emma .textbox dl dt {
+	border-color: var(--ema-color);
+}
+#emma .bg {
+	background-color: var(--ema-color);
+}
+#emma .mark {
+	background-image: url(../member-assets/mark/c09mark.png);
+}
+
+
+#rina .img {
+	background-image: url(../member-assets/character/c10.png);
+}
+#rina .textbox {
+}
+#rina .namebox p,
+#rina .self p {
+	text-shadow: 2px 2px 5px var(--rina-color);
+}
+#rina .namebox .en {
+	color: var(--rina-color);
+}
+#rina .textbox dl dt {
+	border-color: var(--rina-color);
+}
+#rina .bg {
+	background-color: var(--rina-color);
+}
+#rina .mark {
+	background-image: url(../member-assets/mark/c10mark.png);
+}
+
+
+#shioriko .img {
+	background-image: url(../member-assets/character/c11.png);
+}
+#shioriko .textbox {
+}
+#shioriko .namebox p,
+#shioriko .self p {
+	text-shadow: 2px 2px 5px var(--shioriko-color);
+}
+#shioriko .namebox .en {
+	color: var(--shioriko-color);
+}
+#shioriko .textbox dl dt {
+	border-color: var(--shioriko-color);
+}
+#shioriko .bg {
+	background-color: var(--shioriko-color);
+}
+#shioriko .mark {
+	background-image: url(../member-assets/mark/c11mark.png);
+}
+
+
+#mia .img {
+	background-image: url(../member-assets/character/c12.png);
+}
+#mia .textbox {
+}
+#mia .namebox p,
+#mia .self p {
+	text-shadow: 2px 2px 5px var(--mia-color);
+}
+#mia .namebox .en {
+	color: var(--mia-color);
+}
+#mia .textbox dl dt {
+	border-color: var(--mia-color);
+}
+#mia .bg {
+	background-color: var(--mia-light-color);
+}
+#mia .mark {
+	background-image: url(../member-assets/mark/c12mark.png);
+}
+
+
+#lanzhu .img {
+	background-image: url(../member-assets/character/c13.png);
+}
+#lanzhu .textbox {
+}
+#lanzhu .namebox p,
+#lanzhu .self p {
+	text-shadow: 2px 2px 5px var(--lanzhu-color);
+}
+#lanzhu .namebox .en {
+	color: var(--lanzhu-color);
+}
+#lanzhu .textbox dl dt {
+	border-color: var(--lanzhu-color);
+}
+#lanzhu .bg {
+	background-color: var(--lanzhu-color);
+}
+#lanzhu .mark {
+	background-image: url(../member-assets/mark/c13mark.png);
+}
