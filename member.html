@@ -21,14 +21,16 @@
     <link rel="stylesheet" href="css/member-pc.css">
     <link rel="stylesheet" href="css/reset.css">
     <!-- lity.js -->
-    <script type="text/JavaScript" src="js/lity.min.js"></script>
-    <link rel="stylesheet" href="js/lity.min.css" type="text/css">
+    <script type="text/JavaScript" src="node_modules/lity/dist/lity.min.js"></script>
+    <link rel="stylesheet" href="node_modules/lity/dist/lity.min.css" type="text/css">
     <link rel="stylesheet" href="js/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="js/slick.css" type="text/css">
     <script type="text/javascript" src="js/slick.js"></script>
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Title -->
     <title>Love Live Nijigasaki High School Fanmade Website</title>
     <!-- Favicon -->
@@ -170,14 +172,14 @@
                                         </div>
                                     </div>
                                     <div class="slick-slide" data-slick-index="1" aria-hidden="true"
-                                        style="width: 681px; position: relative; left: -681px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;"
+                                        style="width: 681px; position: relative; left: -681px; top: 0px; z-index: 998; opacity: 0;"
                                         tabindex="-1">
                                         <div>
                                             <li style="width: 100%; display: inline-block;">
                                                 <div class="cbox" id="ayumu">
                                                     <div class="namebox">
                                                         <p class="jp">Ayumu Uehara</p>
-                                                        <p class="cv">CV: Aguri Onishi</p>
+                                                        <p class="cv">CV:Aguri Onishi</p>
                                                     </div>
                                                     <div class="textbox">
                                                         <dl>
@@ -187,9 +189,9 @@
                                                             <dd>Mar. 1</dd>
                                                         </dl>
                                                         <dl>
-                                                            <dt>Zodiac Sign</dt>
+                                                            <dt>zodiac sign</dt>
                                                             <dd>Pisces</dd>
-                                                            <dt>Blood Type</dt>
+                                                            <dt>Blood type</dt>
                                                             <dd>A</dd>
                                                         </dl>
                                                         <dl>
@@ -200,8 +202,7 @@
                                                             <p>A second-year student at Nijigasaki High School. A hard
                                                                 worker who doesn't mind chipping away at her goals. A
                                                                 certain experience drives her to join the school idol
-                                                                scene.
-                                                            </p>
+                                                                scene.</p>
                                                         </div>
                                                     </div>
                                                     <div class="img"></div>
@@ -732,79 +733,56 @@
         }
         toggleNav();
     </script>
-    <script src="js/slick.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        $(document).ready(function () {
             $('.slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
+                autoPlay: false,
+                arrows: false,
                 fade: true,
-                asNavFor: '.thumb'
+                slidesToShow: 1,
+                slidesToScroll: 1
             });
-            $('.thumb').slick({
-                slidesToShow: 13,
-                slidesToScroll: 1,
-                asNavFor: '.slider',
-                focusOnSelect: true
+            $('.yu').on('click', function () {
+                $('.slider').slick('slickGoTo', 0);
             });
-        });
+            $('.ayumu').on('click', function () {
+                $('.slider').slick('slickGoTo', 1);
+            });
+            $('.kasumi').on('click', function () {
+                $('.slider').slick('slickGoTo', 2);
+            });
+            $('.shizuku').on('click', function () {
+                $('.slider').slick('slickGoTo', 3);
+            });
+            $('.karin').on('click', function () {
+                $('.slider').slick('slickGoTo', 4);
+            });
+            $('.ai').on('click', function () {
+                $('.slider').slick('slickGoTo', 5);
+            });
+            $('.kanata').on('click', function () {
+                $('.slider').slick('slickGoTo', 6);
+            });
+            $('.setsuna').on('click', function () {
+                $('.slider').slick('slickGoTo', 7);
+            });
+            $('.ema').on('click', function () {
+                $('.slider').slick('slickGoTo', 8);
+            });
+            $('.rina').on('click', function () {
+                $('.slider').slick('slickGoTo', 9);
+            });
+            $('.shioriko').on('click', function () {
+                $('.slider').slick('slickGoTo', 10);
+            });
+            $('.mia').on('click', function () {
+                $('.slider').slick('slickGoTo', 11);
+            });
+            $('.lanzhu').on('click', function () {
+                $('.slider').slick('slickGoTo', 12);
+            });
+        })
     </script>
-    <script>
-        $('.slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: true,
-            asNavFor: '.thumb'
-        });
-        $('.thumb').slick({
-            slidesToShow: 13,
-            slidesToScroll: 1,
-            asNavFor: '.slider',
-            focusOnSelect: true
-        });
-        $('.yu').on('click', function () {
-            $('.slider').slick('slickGoTo', 0);
-        });
-        $('.ayumu').on('click', function () {
-            $('.slider').slick('slickGoTo', 1);
-        });
-        $('.kasumi').on('click', function () {
-            $('.slider').slick('slickGoTo', 2);
-        });
-        $('.shizuku').on('click', function () {
-            $('.slider').slick('slickGoTo', 3);
-        });
-        $('.karin').on('click', function () {
-            $('.slider').slick('slickGoTo', 4);
-        });
-        $('.ai').on('click', function () {
-            $('.slider').slick('slickGoTo', 5);
-        });
-        $('.kanata').on('click', function () {
-            $('.slider').slick('slickGoTo', 6);
-        });
-        $('.setsuna').on('click', function () {
-            $('.slider').slick('slickGoTo', 7);
-        });
-        $('.emma').on('click', function () {
-            $('.slider').slick('slickGoTo', 8);
-        });
-        $('.rina').on('click', function () {
-            $('.slider').slick('slickGoTo', 9);
-        });
-        $('.shioriko').on('click', function () {
-            $('.slider').slick('slickGoTo', 10);
-        });
-        $('.mia').on('click', function () {
-            $('.slider').slick('slickGoTo', 11);
-        });
-        $('.lanzhu').on('click', function () {
-            $('.slider').slick('slickGoTo', 12);
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

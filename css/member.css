@@ -391,6 +391,15 @@ main article > div#member {
     min-height: 1px;
 }
 
+.slick-slide {
+    position: relative;
+    transition: opacity 500ms ease 0s;
+}
+
+.thumb {
+    cursor: pointer;
+}
+
 /* Social */
 
 .social{
