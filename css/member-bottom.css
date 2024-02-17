@@ -100,7 +100,7 @@
     background-color: var(--setsuna-light-color);
 }
 
-.thumb li img.emma {
+.thumb li img.ema {
     border-color: var(--ema-color);
     background-color: var(--ema-light-color);
 }
@@ -405,25 +405,25 @@
 }
 
 
-#emma .img {
+#ema .img {
 	background-image: url(../member-assets/character/c09.png);
 }
-#emma .textbox {
+#ema .textbox {
 }
-#emma .namebox p,
-#emma .self p {
+#ema .namebox p,
+#ema .self p {
 	text-shadow: 2px 2px 5px var(--ema-color);
 }
-#emma .namebox .en {
+#ema .namebox .en {
 	color: var(--ema-color);
 }
-#emma .textbox dl dt {
+#ema .textbox dl dt {
 	border-color: var(--ema-color);
 }
-#emma .bg {
+#ema .bg {
 	background-color: var(--ema-color);
 }
-#emma .mark {
+#ema .mark {
 	background-image: url(../member-assets/mark/c09mark.png);
 }
 
