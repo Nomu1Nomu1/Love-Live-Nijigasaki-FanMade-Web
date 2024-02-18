@@ -206,6 +206,7 @@
 }
 .mark {
 	z-index: 298;
+	background-color: none;
 }
 .bg {
 	position: absolute;
