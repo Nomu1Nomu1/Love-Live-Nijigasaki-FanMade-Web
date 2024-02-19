@@ -173,7 +173,7 @@ body {
 
 #nav #strbox {
     background-color: #EEE;
-    border-radius: 3em;
+    border-radius: .3em;
     padding: .5em;
     border: 1px solid;
     border-color: var(--movie-color);
@@ -400,4 +400,49 @@ a.bnrbox {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+/* footer */
+#footer {
+	clear: both;
+	width: 100%;
+	position: relative;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+#footer::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: calc(100% + 5px);
+	z-index: -1;
+	bottom: 0;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 30%,rgba(255,255,255,0.70) 70%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 30%,rgba(255,255,255,0.70) 70%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 30%,rgba(255,255,255,0.70) 70%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 30%,rgba(255,255,255,0.70) 70%);
+	background-size: cover;
+	background-position: center center;
+}
+
+#footer #endbar {
+	width: 100%;
+	height: 20px;
+	margin: 0 auto;
+	background-color: var(--base-color); /* base color */
+}
+
+#footer #copyright p {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em 0;
+	font-size: 1.2rem;
+	letter-spacing: -.003em;
+}
+
+#kv {
+	background-image: url(../assets/clear.jpg);
 }
