@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+:root {
+	--base-color:#f8b656;
+	--base-light-color:rgba(248,182,86,.50); 
+	--news-color:#ff791b;
+	--staff-color:#50dfbd;
+	--story-color:#ff6d6d;
+	--member-color:#67d0ff;
+	--member-light-color:rgba(235,111,139,.3);
+	--movie-color:#c717fa;
+	--books-color:#70c228;
+	--vote-color:#297fff;
+	--tw-color:rgb(29, 161, 242); 
+	--yt-color:rgb(255, 0, 0); 
+	--insta-color:#297fff; 
+	--radio-color:#adcc00;
+	--manga-color:#1ba6ff;
+	--cd-color:#c85cff;
+	--live-color:#fa73ff;
+	--ss-color:#fead00;
+	--tv-color:#eb6f8b;
+	--nijigasaki-color:#e4007f;
+	
+	--cast-color:#1ba6ff;
+	--cast-light-color:rgba(27,166,255,.50);
+	--simulcast-color:#e4007f;
+}
+
+body::after{
+    background-color: var(--tv-color);
+}
+
+#navigation li a.story::after {
+    content: '〉';
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: .5em;
+    top: 1em;
+}
+
+#contentstitle h1{
+    background-color: var(--tv-color);
+}
+
+#main h2{
+    color: var(--tv-color);
+    border-left: 1em solid var(--tv-color);
+}
+
+#main #contentsmenu li a{
+    border-color: var(--tv-color);
+    color: var(--tv-color)!important;
+}
+
+#main #contentsmenu li a:hover {
+    border-color: var(--tv-color);
+    background-color: var(--tv-color)!important;
+}
+
+#main .imgbox {
+    text-align: center;
+}
+
+.sp {
+    display: none;
+}
+
+@media screen and(max-width: 480px) {
+    .sp {
+        display: inline;
+    }
+    .pc{
+        display: none;
+    }
+}
+
+#main .outline {
+	width: 500px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.outline p {
+	color: var(--tv-color);
+	line-height: 2;
+	letter-spacing: -.005em;
+	font-weight: 500;
+	margin-bottom: 2em;
+	text-align: center;
+	text-shadow: 0px 0px 10px var(--tv-light-color);
+	-ms-text-shadow: 0px 0px 10px var(--tv-light-color);
+	word-break: keep-all;
+}
+
+.outline .btn {
+	text-align: center;
+}
+
+
+#main .cast {
+	color: var(--tv-color);
+	line-height: 1;
+	font-weight: 100;
+	margin-bottom: 3em;
+	text-align: center;
+	text-shadow: 0px 0px 10px var(--tv-light-color);
+	-ms-text-shadow: 0px 0px 10px var(--tv-light-color);
+}
+.cast dt {
+	width: 50%;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+}
+.cast dd {
+	padding-left: calc(50% + 10px);
+	margin-bottom: 10px;
+	
+}
+
+.onair table,
+.onair dl {
+	width: calc(100% - 20px);
+	max-width: 800px;
+	margin: 0 auto;
+	letter-spacing: -.005em;
+}
+.onair table tr td {
+	padding: .5em 1em;
+	line-height: 1.2;
+	border-bottom: 1px dotted var(--tv-light-color);
+	position: relative;
+}
+.onair table tr > td:first-child {
+	white-space: nowrap;
+	width: 40%;
+}
+.onair table tr > td:last-child {
+	width: 60%;
+}
+@media screen and (max-width:480px){
+	.onair table tr > td:first-child {
+		width: 50%;
+	}
+	.onair table tr > td:last-child {
+		width: 50%;
+		padding-right: 0;
+	}
+}
+.onair table tr > td:first-child::after {
+	content: '〉';
+	position: absolute;
+	right: 0em;
+	top: calc(50% - .55em);
+}
+.onair table tr td span {
+	display: inline-block;
+}
+.onair .attention {
+	font-size: 80%;
+	letter-spacing: -.02em;
+	text-align: right;
+}
+
+.onair dl dt {
+	padding: .5em 1em;
+	line-height: 1.2;
+	border-bottom: 1px dotted var(--tv-light-color);
+}
+.onair dl dt strong {
+	font-size: 140%;
+	font-weight: 800;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: var(--tv-color);
+}
+.onair dl dd {
+	padding: 15px 1em 30px;
+	line-height: 1.2;
+}
+@media screen and (min-width:481px) {
+	.onair dl dd ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.onair dl dd ul li {
+		width: 50%;
+		padding-left: 10px;
+	}
+}
+
+.followbtn.tv {
+	background-color: var(--tv-color);
+	border-color: var(--tv-color);
+	margin-bottom: 15px;
+}
+@media screen and (max-width:768px) {
+	.followbtn.tv {
+		padding: 1em;
+	}
+.followbtn::after {
+	top: 1.05em;
+}
+.followbtn::before {
+	top: 1.05em;
+}
+}
+.followbtn:hover::after {
+	color: var(--tv-color);
+}
+.followbtn:hover::before {
+	color: var(--tv-color);
+}
+
+.followbtn.tv:hover {
+	background-color: var(--tv-light-color);
+	color: var(--tv-color);
+	text-decoration: none;
+}

@@ -35,6 +35,16 @@ body::after {
 	background-color: var(--cast-color);
 }
 
+#navigation li a.cast::after {
+    content: '〉';
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: .5em;
+    top: 1em;
+}
+
 #main h2 {
 	color: var(--cast-color);
 	border-left: 1em solid var(--cast-color);
