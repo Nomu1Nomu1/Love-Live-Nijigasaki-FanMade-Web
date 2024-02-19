@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+:root {
+	--base-color:#f8b656;
+	--base-light-color:rgba(248,182,86,.50); 
+	--news-color:#ff791b;
+	--staff-color:#50dfbd;
+	--story-color:#ff6d6d;
+	--member-color:#67d0ff;
+	--member-light-color:rgba(235,111,139,.3);
+	--movie-color:#c717fa;
+	--books-color:#70c228;
+	--vote-color:#297fff;
+	--tw-color:rgb(29, 161, 242); 
+	--yt-color:rgb(255, 0, 0); 
+	--insta-color:#297fff; 
+	--radio-color:#adcc00;
+	--manga-color:#1ba6ff;
+	--cd-color:#c85cff;
+	--live-color:#fa73ff;
+	--ss-color:#fead00;
+	--tv-color:#eb6f8b;
+	--nijigasaki-color:#e4007f;
+	
+	--cast-color:#1ba6ff;
+	--cast-light-color:rgba(27,166,255,.50);
+	--simulcast-color:#e4007f;
+}
+
+body::after {
+    background-color: var(--cast-color);
+}
+
+#contentstitle h1 {
+	background-color: var(--cast-color);
+}
+
+#main h2 {
+	color: var(--cast-color);
+	border-left: 1em solid var(--cast-color);
+}
+
+#main #contentsmenu li a {
+	border-color: var(--cast-color);
+	color: var(--cast-color)!important;
+}
+
+#main #contentsmenu li a:hover {
+	border-color: var(--cast-color);
+	background-color: var(--cast-color)!important;
+}
+
+#main .imgbox {
+	text-align: center;
+}
+
+.sp {
+	display: none;
+}
+
+@media screen and (max-width:480px) {
+	.sp {
+		display: inline;
+	}
+	.pc {
+		display: none;
+	}
+}
+
+#main .cast {
+	color: var(--cast-color);
+	line-height: 1.2;
+	font-weight: 100;
+	margin-bottom: 3em;
+	text-align: center;
+	text-shadow: 0px 0px 10px var(--cast-light-color);
+	-ms-text-shadow: 0px 0px 10px var(--cast-light-color);
+}
+
+@media screen and (max-width:480px) {
+	#main .cast {
+		letter-spacing: -.002em;
+		word-break: keep-all;
+	}
+}
+
+.cast dt {
+	width: 50%;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+	clear: both;
+}
+
+.cast dd {
+	padding-left: calc(50% + 10px);
+	margin-bottom: 10px;
+	
+}
+
+.followbtn.tv {
+	background-color: var(--cast-color);
+	border-color: var(--cast-color);
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width:768px) {
+	.followbtn.tv {
+		padding: 1em;
+	}
+
+.followbtn::after {
+	top: 1.05em;
+}
+
+.followbtn::before {
+	top: 1.05em;
+}
+
+}
+
+.followbtn:hover::after {
+	color: var(--cast-color);
+}
+
+.followbtn:hover::before {
+	color: var(--cast-color);
+}
+
+.followbtn.tv:hover {
+	background-color: var(--cast-light-color);
+	color: var(--cast-color);
+	text-decoration: none;
+}
