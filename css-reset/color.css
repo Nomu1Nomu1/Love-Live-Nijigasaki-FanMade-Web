@@ -1,6 +1,6 @@
 :root {
 	--base-color:#f8b656;
-	--base-light-color:rgba(248,182,86,.50); /* #00ff00 #8cff5f #5ac722 */
+	--base-light-color:rgba(248,182,86,.50); 
 	--news-color:#ff791b;
 	--staff-color:#50dfbd;
 	--story-color:#ff6d6d;
@@ -9,9 +9,9 @@
 	--movie-color:#c717fa;
 	--books-color:#70c228;
 	--vote-color:#297fff;
-	--tw-color:rgb(29, 161, 242); /* twitter */
-	--yt-color:rgb(255, 0, 0); /* Youtube */
-	--insta-color:#297fff; /* intagram */
+	--tw-color:rgb(29, 161, 242); 
+	--yt-color:rgb(255, 0, 0); 
+	--insta-color:#297fff; 
 	--radio-color:#adcc00;
 	--manga-color:#1ba6ff;
 	--cd-color:#c85cff;

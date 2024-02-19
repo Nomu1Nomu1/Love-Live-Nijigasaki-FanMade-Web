@@ -1,0 +1,122 @@
+@charset "utf-8";
+:root {
+    --base-color:#f8b656;
+	--base-light-color:rgba(248,182,86,.50); 
+	--news-color:#ff791b;
+	--staff-color:#50dfbd;
+	--story-color:#ff6d6d;
+	--member-color:#67d0ff;
+	--member-light-color:rgba(235,111,139,.3);
+	--movie-color:#c717fa;
+	--books-color:#70c228;
+	--vote-color:#297fff;
+	--tw-color:rgb(29, 161, 242);
+	--yt-color:rgb(255, 0, 0); 
+	--insta-color:#297fff; 
+	--radio-color:#adcc00;
+	--manga-color:#1ba6ff;
+	--cd-color:#c85cff;
+	--live-color:#fa73ff;
+	--ss-color:#fead00;
+	--tv-color:#eb6f8b;
+	--nijigasaki-color:#e4007f;
+	
+	--cast-color:#1ba6ff;
+	--cast-light-color:rgba(27,166,255,.50);
+	--simulcast-color:#e4007f;
+
+	--tv-light-color:rgba(235,111,139,.3);
+}
+
+#contentstitle h1 {
+	background-color: var(--simulcast-color);
+}
+#main h2 {
+	color: var(--simulcast-color);
+	border-left: 1em solid var(--nijigasaki-color);
+}
+
+#main div p {
+	color: var(--base-color);
+	line-height: 2;
+	letter-spacing: -.02em;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 0px 0px 10px var(--base-light-color);
+	-ms-text-shadow: 0px 0px 10px var(--base-color);
+	word-break: keep-all;
+	width: 500px;
+	max-width: 90%;
+	margin: 0 auto 2em;
+}
+#main .onair {
+	letter-spacing: -.003em;
+	word-break: keep-all;
+}
+.onair dl dt {
+	padding: .5em 1em;
+	line-height: 1.2;
+	border-bottom: 1px dotted var(--tv-light-color);
+}
+.onair dl dt strong {
+	font-size: 140%;
+	font-weight: 800;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: var(--tv-color);
+}
+.onair dl dd {
+	padding: 15px 0 30px;
+	line-height: 1;
+}
+.onair > ul {
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.onair ul li {
+	margin-bottom: 15px;
+}
+.onair ul li:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (min-width:481px) {
+	.onair dl dd ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.onair dl dd ul li,
+	.onair > ul li {
+		width: 50%;
+		padding-left: 10px;
+	}
+}
+
+.followbtn.tv {
+	background-color: var(--tv-color);
+	border-color: var(--tv-color);
+	margin-bottom: 0;
+}
+@media screen and (max-width:768px) {
+	.followbtn.tv {
+		padding: 1em;
+	}
+.followbtn::after {
+	top: 1.05em;
+}
+.followbtn::before {
+	top: 1.05em;
+}
+}
+.followbtn:hover::after {
+	color: var(--tv-color);
+}
+.followbtn:hover::before {
+	color: var(--tv-color);
+}
+
+.followbtn.tv:hover {
+	background-color: var(--tv-light-color);
+	color: var(--tv-color);
+	text-decoration: none;
+}
