@@ -1,6 +1,31 @@
 @charset "UTF-8";
 
 :root {
+	/* Base Color */
+	--base-color:#f8b656;
+	--base-light-color:rgba(248,182,86,.50); 
+	--news-color:#ff791b;
+	--staff-color:#50dfbd;
+	--story-color:#ff6d6d;
+	--member-color:#67d0ff;
+	--member-light-color:rgba(235,111,139,.3);
+	--movie-color:#c717fa;
+	--books-color:#70c228;
+	--vote-color:#297fff;
+	--tw-color:rgb(29, 161, 242); 
+	--yt-color:rgb(255, 0, 0); 
+	--insta-color:#297fff; 
+	--radio-color:#adcc00;
+	--manga-color:#1ba6ff;
+	--cd-color:#c85cff;
+	--live-color:#fa73ff;
+	--ss-color:#fead00;
+	--tv-color:#eb6f8b;
+	--nijigasaki-color:#e4007f;
+	
+	--cast-color:#1ba6ff;
+	--cast-light-color:rgba(27,166,255,.50);
+	--simulcast-color:#e4007f;
     /* Member color */
 
     --yu-color: rgba(29, 29, 29, 1);
@@ -31,6 +56,13 @@
     --mia-light-color: rgba(169, 168, 152, .3);
     --lanzhu-color: rgba(248, 200, 196, 1);
     --lanzhu-light-color: rgba(248, 200, 196, .3);
+}
+body::after{
+	background-color: var(--member-color);
+}
+
+#contentstitle h1 {
+	background-color: var(--member-color);
 }
 
 /* Member Top */
