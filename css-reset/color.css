@@ -1,0 +1,171 @@
+:root {
+	--base-color:#f8b656;
+	--base-light-color:rgba(248,182,86,.50); /* #00ff00 #8cff5f #5ac722 */
+	--news-color:#ff791b;
+	--staff-color:#50dfbd;
+	--story-color:#ff6d6d;
+	--member-color:#67d0ff;
+	--member-light-color:rgba(235,111,139,.3);
+	--movie-color:#c717fa;
+	--books-color:#70c228;
+	--vote-color:#297fff;
+	--tw-color:rgb(29, 161, 242); /* twitter */
+	--yt-color:rgb(255, 0, 0); /* Youtube */
+	--insta-color:#297fff; /* intagram */
+	--radio-color:#adcc00;
+	--manga-color:#1ba6ff;
+	--cd-color:#c85cff;
+	--live-color:#fa73ff;
+	--ss-color:#fead00;
+	--tv-color:#eb6f8b;
+	--nijigasaki-color:#e4007f;
+	
+	--cast-color:#1ba6ff;
+	--cast-light-color:rgba(27,166,255,.50);
+	--simulcast-color:#e4007f;
+}
+
+#navigation li a.news {
+	background-color:  var(--news-color);
+}
+#navigation li a.news:hover {
+	color: var(--news-color);
+	border-color: var(--news-color);
+}
+
+
+#navigation li a.staff {
+	background-color: var(--staff-color);
+}
+#navigation li a.staff:hover {
+	color:  var(--staff-color);
+	border-color: var(--staff-color);
+}
+
+
+#navigation li a.story {
+	background-color: var(--story-color);
+}
+#navigation li a.story:hover {
+	color: var(--story-color);
+	border-color: var(--story-color);
+}
+
+
+#navigation li a.member {
+	background-color: var(--member-color);
+}
+#navigation li a.member:hover {
+	color: var(--member-color);
+	border-color: var(--member-color);
+}
+
+
+#navigation li a.str {
+	background-color: var(--movie-color);
+}
+#navigation li a.str:hover {
+	color: var(--movie-color);
+	border-color: var(--movie-color);
+}
+
+
+#navigation li a.books {
+	background-color: var(--books-color);
+}
+#navigation li a.books:hover {
+	color: var(--books-color);
+	border-color: var(--books-color);
+}
+
+
+#navigation li a.vote {
+	background-color: var(--vote-color);
+}
+#navigation li a.vote:hover {
+	color: var(--vote-color);
+	border-color: var(--vote-color);
+}
+
+
+#navigation li a.radio {
+	background-color: var(--radio-color);
+}
+#navigation li a.radio:hover {
+	color: var(--radio-color);
+	border-color: var(--radio-color);
+}
+
+
+#navigation li a.manga {
+	background-color: var(--manga-color);
+}
+#navigation li a.manga:hover {
+	color: var(--manga-color);
+	border-color: var(--manga-color);
+}
+
+
+#navigation li a.cd {
+	background-color: var(--cd-color);
+}
+#navigation li a.cd:hover {
+	color: var(--cd-color);
+	border-color: var(--cd-color);
+}
+
+
+#navigation li a.live {
+	background-color: var(--live-color);
+}
+#navigation li a.live:hover {
+	color: var(--live-color);
+	border-color: var(--live-color);
+}
+
+
+#navigation li a.ss {
+	background-color: var(--ss-color);
+}
+#navigation li a.ss:hover {
+	color: var(--ss-color);
+	border-color: var(--ss-color);
+}
+
+
+#navigation li a.tv {
+	background-color: var(--tv-color);
+}
+#navigation li a.tv:hover {
+	color: var(--tv-color);
+	border-color: var(--tv-color);
+}
+
+
+#navigation li a.nijigasaki {
+	background-color: var(--nijigasaki-color);
+}
+#navigation li a.nijigasaki:hover {
+	color: var(--nijigasaki-color);
+	border-color: var(--nijigasaki-color);
+}
+
+
+#navigation li a.simulcast {
+	background-color: var(--simulcast-color);
+}
+#navigation li a.simulcast:hover {
+	color: var(--simulcast-color);
+	border-color: var(--simulcast-color);
+}
+
+
+#navigation li a.cast {
+	background-color: var(--cast-color);
+}
+#navigation li a.cast:hover {
+	color: var(--cast-color);
+	border-color: var(--cast-color);
+}
+
+

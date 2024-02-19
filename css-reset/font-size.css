@@ -1,0 +1,33 @@
+@charset "utf-8";
+html{
+	font-size: 62.5%;
+}
+body{
+    font-size: calc(1rem + 0.54vw);
+}
+body {
+	font-family: 'Nunito', sans-serif, "YakuHanJP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+	color: #4e4e4e;
+	line-height: 1.5;
+}
+.yakuhan_no {
+	font-family: 'Nunito', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+}
+
+@media (min-width: 1201px) {
+	body{
+		font-size: 1.648rem;
+	}
+}
+@media screen and (max-width: 768px) {
+    body{
+		font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+ 		font-size: 1.2rem;
+   }
+}
+

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+:root {
+	--base-color:#f8b656;
+	--base-light-color:rgba(248,182,86,.50); /* #00ff00 #8cff5f #5ac722 */
+	--news-color:#ff791b;
+	--staff-color:#50dfbd;
+	--story-color:#ff6d6d;
+	--member-color:#67d0ff;
+	--member-light-color:rgba(235,111,139,.3);
+	--movie-color:#c717fa;
+	--books-color:#70c228;
+	--vote-color:#297fff;
+	--tw-color:rgb(29, 161, 242); /* twitter */
+	--yt-color:rgb(255, 0, 0); /* Youtube */
+	--insta-color:#297fff; /* intagram */
+	--radio-color:#adcc00;
+	--manga-color:#1ba6ff;
+	--cd-color:#c85cff;
+	--live-color:#fa73ff;
+	--ss-color:#fead00;
+	--tv-color:#eb6f8b;
+	--nijigasaki-color:#e4007f;
+	
+	--cast-color:#1ba6ff;
+	--cast-light-color:rgba(27,166,255,.50);
+	--simulcast-color:#e4007f;
+}
+
+a:link {
+    color: #E4007F;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #910050;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF00CC;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FF00CC;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.dash {
+    letter-spacing: -.1em;
+}
+
+body {
+    background-color: #fff;
+    position: relative;
+}
+
+/* header */
+#header {
+    position: relative;
+    width: 100%;
+}
+
+#header::after{
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+/* header > global_nav */
+#global_nav{
+    position: relative;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    background-color: var(--base-color);
+    padding: .5em 0;
+    z-index: 999;
+}
+
+#portal {
+	margin: 0 0 0 1em;
+	line-height: 1;
+	height: 1em;
+}
+#worldwide {
+	margin: -1em 1em 0;
+	float: right;
+	line-height: 1;
+	height: 1em;
+}
+	
+#portal a:link,
+#worldwide a:link {
+	color: #fff; text-decoration: none;
+}
+#portal a:visited,
+#worldwide a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+#portal a:hover,
+#worldwide a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* contentstitle */
+#contentstitle h1 {
+    color: rgba(255, 255, 255, 1.00);
+    border-radius: 2em;
+    padding: .5em 1em;
+    font-size: 100%;
+    letter-spacing: -.02em;
+    line-height: 1;
+    font-weight: 300;
+    width: 100%;
+    z-index: 499;
+}
+
+#kv {
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+/* nav */
+#nav {
+    position: relative;
+    width: 100%;
+    z-index: 499;
+    padding-top: 30px;
+    padding-right: 15px;
+}
