@@ -34,6 +34,10 @@ main article > div.kv {
 	padding: 0;
 }
 
+main article > div.kv-japanese {
+	padding: 0;
+}
+
 /* header > navigation */
 /*
 #navigation {

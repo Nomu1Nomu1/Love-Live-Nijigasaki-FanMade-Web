@@ -65,6 +65,16 @@ body::after{
 	background-color: var(--member-color);
 }
 
+#navigation li a.member::after {
+    content: '〉';
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: .5em;
+    top: 1em;
+}
+
 /* Member Top */
 
 .thumb {

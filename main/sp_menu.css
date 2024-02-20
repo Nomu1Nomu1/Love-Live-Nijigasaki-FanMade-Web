@@ -175,6 +175,7 @@ body {
 }
 .nav-open #header,
 .nav-open #kv,
+.nav-open #kv-japanese,
 .nav-open #footer,
 .nav-open #main {
 	pointer-events: none;

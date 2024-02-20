@@ -135,6 +135,17 @@ body {
     backface-visibility: hidden;
 }
 
+#kv-japanese{
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
 /* nav */
 #nav {
     position: relative;
@@ -403,13 +414,23 @@ a.bnrbox {
 }
 
 /* footer */
+/* Footer */
 #footer {
-	clear: both;
-	width: 100%;
-	position: relative;
-	margin-top: 30px;
-	padding-bottom: 30px;
+    clear: both;
+    width: 100%;
+    position: relative;
+    margin-top: 10rem;
+    padding-bottom: 30px;
 }
+
+#footer #endbar {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    background-color: var(--base-color);
+}
+
+
 
 #footer::after {
 	position: absolute;
@@ -434,15 +455,22 @@ a.bnrbox {
 	background-color: var(--base-color); /* base color */
 }
 
+#footer #copyright {
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
 #footer #copyright p {
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
-	padding: 2em 0;
-	font-size: 1.2rem;
-	letter-spacing: -.003em;
+    text-align: center;
+    width: 100%;
+    font-size: 70%;
+    letter-spacing: -.003em;
 }
 
 #kv {
 	background-image: url(../assets/clear.jpg);
+}
+
+#kv-japanese{
+    background-image: url(../assets/clear1.jpg);
 }
